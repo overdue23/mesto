@@ -9,3 +9,15 @@
 	transition: .3s ease;
 	width: 24px;
 }
+
+.profile__edit-button:hover {
+	opacity: 0.6;
+ }
+ 
+ @media screen and (max-width: 480px) {
+	.profile__edit-button {
+	  width: 18px;
+	  height: 18px;
+	  margin-top: 8px;
+	}
+ }
