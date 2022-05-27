@@ -1,0 +1,13 @@
+.element__like-btn {
+  background: transparent url(../../../images/elements/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 19px;
+  margin: 0 0 3px;
+  padding: 0;
+  transition: 0.3s ease;
+  width: 22px;
+}
