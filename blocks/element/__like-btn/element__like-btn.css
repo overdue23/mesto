@@ -11,3 +11,7 @@
   transition: 0.3s ease;
   width: 22px;
 }
+
+.element__like-btn:hover {
+	opacity: 0.5;
+ }
