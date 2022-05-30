@@ -20,5 +20,5 @@
   - Модульные окна с формой
 
 ## Ссылки на проект и на макет:
-* [Проект на Github Pages]()
+* [Проект на Github Pages](https://overdue23.github.io/mesto/index.html)
 * [Макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A326)
