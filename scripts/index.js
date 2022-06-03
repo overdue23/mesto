@@ -5,8 +5,8 @@ let saveButton = document.querySelector('.popup__save-button'); //перемен
 let userName = document.querySelector('.profile__title'); //переменная касса имени профиля на странице
 let userJop = document.querySelector('.profile__description'); //переменная касса работы на странице
 
-	let nameInput = document.querySelector('.popup__user-name'); // Воспользуйтесь инструментом .querySelector()
-	let jobInput = document.querySelector('.popup__user-jop'); // Воспользуйтесь инструментом .querySelector()
+let nameInput = document.querySelector('.popup__user-name'); // Воспользуйтесь инструментом .querySelector()
+let jobInput = document.querySelector('.popup__user-jop'); // Воспользуйтесь инструментом .querySelector()
 
 
 function openPopup() {
@@ -48,13 +48,5 @@ function formSubmitHandler (evt) {
 // Прикрепляем обработчик к форме:
 // он будет следить за событием “submit” - «отправка»
 formElement.addEventListener('submit', formSubmitHandler);
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-document.querySelectorAll('.element__like-btn').forEach(function(LikeButton) {   //Воспользуйтесь инструментом .querySelectorAll() для всех классов .element__like-btn
-	LikeButton.onclick = function(){   
-		this.classList.add('element__like-btn_active');
-	};
-});
 
 
