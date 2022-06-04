@@ -26,11 +26,10 @@
 
 @media screen and (max-width: 600px) {
   .popup__close-button {
-    background: transparent url(../../../images/popup/Close-icon-mobile.svg)
-      center no-repeat;
+    background: transparent url(../../../images/popup/Close-icon-mobile.svg) 50%
+      no-repeat;
     width: 20px;
     height: 20px;
-    top: -36px;
     right: 0;
   }
 }
