@@ -5,8 +5,8 @@ let closeButton = popupElement.querySelector('.popup__close-button'); //пере
 let userName = document.querySelector('.profile__title'); //переменная касса имени профиля на странице
 let userJop = document.querySelector('.profile__description'); //переменная касса работы на странице
 
-let nameInput = document.querySelector('.popup__user-name'); // Воспользуйтесь инструментом .querySelector()
-let jobInput = document.querySelector('.popup__user-jop'); // Воспользуйтесь инструментом .querySelector()
+let nameInput = document.getElementById("name"); // Воспользуйтесь инструментом .querySelector()
+let jobInput = document.getElementById("profession"); // Воспользуйтесь инструментом .querySelector()
 
 let formElement = document.querySelector('.popup__form'); // Воспользуйтесь методом querySelector()
 
