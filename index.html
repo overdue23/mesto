@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <meta
-      name="description"
-      content="«Mesto» - учебный проект от Яндекс.Практикум, задание 4-го спринта"
-    />
-    <meta name="keywords" content="Mesto, Яндекс Практикум, Четвертый спринт" />
-    <title>«Mesto» - учебный проект от Яндекс.Практикум</title>
-  </head>
-  <body class="body">
-    <div class="page">
-      <header class="header">
-        <img
-          src="./images/header/Vector.svg"
-          alt="логотип Mesto"
-          class="header__logo"
-        />
-      </header>
-      <main class="content">
-        <section class="profile">
-          <div class="profile__card">
-            <img
-              class="profile__avatar"
-              src="./images/profile/image.jpg"
-              alt="Аватар пользователя"
-            />
-            <div class="profile__info">
-              <h1 class="profile__title">Жак-Ив Кусто</h1>
-              <button type="button" class="profile__edit-button" aria-label="кнопка редактирования профиля"></button>
-              <p class="profile__description">Исследователь океана</p>
-            </div>
-          </div>
-          <button type="button" class="profile__add-button" aria-label="кнопка добавления карточки"></button>
-        </section>
-        <section class="elements">
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1088404-unsplash.jpg"
-              alt="Карачаевск"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Карачаевск</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1404681-unsplash.jpg"
-              alt="Гора Эльбрус"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1556355-unsplash.jpg"
-              alt="Домбай"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Домбай</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1404681-unsplash.jpg"
-              alt="Гора Эльбрус"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1556355-unsplash.jpg"
-              alt="Домбай"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Домбай</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-          <div class="element">
-            <img
-              class="element__img"
-              src="./images/elements/kirill-pershin-1088404-unsplash.jpg"
-              alt="Карачаево-Черкесия"
-            />
-            <div class="element__bottom-block">
-              <h2 class="element__title">Карачаево-Черкесия</h2>
-              <button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <p class="footer__copyright">&copy;2022 Mesto Russia</p>
-      </footer>
-    </div>
 
-    <div class="popup">
-      <div class="popup__window">
-        <button type="button" class="popup__close-button" aria-label="кнопка закрытия формы"></button>
-        <form class="popup__form" method="post" name="myForm">
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <input id="name" placeholder="Имя" name="user-name" type="text" class="popup__input" />
-          <input id="profession" placeholder="О себе"  name="user-jop" type="text" class="popup__input" />
-          <button type="submit" class="popup__save-button" aria-label="кнопка сохранения">Сохранить</button>
-        </form>
-      </div>
-    </div>
-    <script src="./scripts/index.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./pages/index.css" />
+	<meta name="description" content="«Mesto» - учебный проект от Яндекс.Практикум, задание 4-го спринта" />
+	<meta name="keywords" content="Mesto, Яндекс Практикум, Четвертый спринт" />
+	<title>«Mesto» - учебный проект от Яндекс.Практикум</title>
+</head>
+
+<body class="body">
+	<div class="page">
+		<header class="header">
+			<img src="./images/header/Vector.svg" alt="логотип Mesto" class="header__logo" />
+		</header>
+		<main class="content">
+			<section class="profile">
+				<div class="profile__card">
+					<img class="profile__avatar" src="./images/profile/image.jpg" alt="Аватар пользователя" />
+					<div class="profile__info">
+						<h1 class="profile__title">Жак-Ив Кусто</h1>
+						<button type="button" class="profile__edit-button"
+							aria-label="кнопка редактирования профиля"></button>
+						<p class="profile__description">Исследователь океана</p>
+					</div>
+				</div>
+				<button type="button" class="profile__add-button" aria-label="кнопка добавления карточки"></button>
+			</section>
+			<section class="elements">
+				<ul class="element__grid">
+					<template id="template">
+						<li class="element">
+							<button class="element__delete"></button>
+							<img class="element__img" src="#" alt="#" />
+							<div class="element__bottom-block">
+								<h2 class="element__title"></h2>
+								<button type="button" class="element__like-btn" aria-label="кнопка лайк"></button>
+							</div>
+						</li>
+					</template>
+				</ul>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__copyright">&copy;2022 Mesto Russia</p>
+		</footer>
+	</div>
+	<!-- Попап редактирования профиля -->
+	<div class="popup popup_type_edit" id="profile-edit-popup">
+		<div class="popup__window">
+			<h3 class="popup__title">Редактировать профиль</h3>
+			<form class="popup__form popup__form_edit" method="post" name="edit-form-profile">
+				<input id="name" placeholder="Имя" name="user-name" type="text"
+					class="popup__input popup__input_string_name" />
+				<input id="profession" placeholder="О себе" name="user-jop" type="text"
+					class="popup__input popup__input_string_description" />
+				<button type="submit" class="popup__save-button" aria-label="кнопка сохранения">
+					Сохранить
+				</button>
+			</form>
+			<button type="button" class="popup__close-button" aria-label="кнопка закрытия формы"></button>
+		</div>
+	</div>
+	<!-- Попап добавления карточки -->
+	<div class="popup popup_type_card">
+		<div class="popup__window">
+			<h3 class="popup__title">Новое место</h3>
+			<form name="edit-form-card" class="popup__form popup__form_card" novalidate="">
+				<input id="card-name" name="name" placeholder="Название места" class="popup__input popup__input_card_name"
+					minlength="2" maxlength="30" required="" />
+				<span id="card-name-error" class="popup__error"></span>
+				<input id="cardUrl" type="url" name="link" placeholder="Ссылка на картинку"
+					class="popup__input popup__input_card_url" required="" />
+				<span id="cardUrl-error" class="popup__error"></span>
+				<button type="submit" class="popup__save-button popup__save-button_disabled">
+					Сохранить
+				</button>
+			</form>
+			<button type="button" class="popup__close-button"></button>
+		</div>
+	</div>
+	<!-- Попап с картинкой-->
+	<div class="popup popup_type_image">
+		<div class="popup__image-window">
+			<button type="button" class="popup__close-button"></button>
+			<img class="popup__image-url" src="." alt="" />
+			<h3 class="popup__image-name"></h3>
+		</div>
+	</div>
+
+	<script src="./scripts/index.js"></script>
+	
+</body>
+
 </html>
