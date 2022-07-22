@@ -42,7 +42,7 @@ const cardBigImageDescription = cardImagePopup.querySelector(".popup__image-name
 const nameInput = document.querySelector(".popup__input_string_name"); // инпут названия профиля
 const descriptionInput = document.querySelector(".popup__input_string_description"); // инпут описание профиля
 
-const cardsContainer = document.querySelector(".element__grid");
+const cardsContainer = document.querySelector(".elements__grid");
 const cardTemplate = document.querySelector("#template").content; //шаблон карточки
 
 function closePopupByOverlay(evt) {

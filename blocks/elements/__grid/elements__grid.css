@@ -1,4 +1,4 @@
-.element__grid {
+.elements__grid {
 	column-gap: 17px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -11,13 +11,13 @@
  }
  
  @media screen and (max-width: 1024px) {
-	.element__grid {
+	.elements__grid {
 	  grid-template-columns: repeat(2, 1fr);
 	}
  }
  
  @media screen and (max-width: 768px) {
-	.element__grid {
+	.elements__grid {
 	  display: flex;
 	  flex-direction: column;
 	  column-gap: 0;
