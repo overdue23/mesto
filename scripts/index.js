@@ -30,13 +30,16 @@ function closePopupByOverlay(evt) {
 
 function openPopup(popup) {
 	popup.classList.add("popup_opened"); //открываем popup
-	
-	nameInput.value = profileName.textContent; // Присваиваем значение полей value описанию профиля
-	descriptionInput.value = profileDescription.textContent; //
 }
 
 function closePopup(popup) {
 	popup.classList.remove("popup_opened"); //закрываем popup
+}
+
+function openPropfilePopup() {
+	nameInput.value = profileName.textContent; 					// Присваиваем значение полей value описанию профиля
+	descriptionInput.value = profileDescription.textContent; // 
+	openPopup(profileEditPopup)
 }
 
 function createCard(cardData) {
@@ -72,7 +75,7 @@ function renderCard(cardData) {
 
 initialCards.forEach((cardData) => renderCard(cardData));
 
-function AddcardSubmitHandler(evt) {
+function handleAddCardSubmit(evt) {
 	evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
 	const newCard = {
 		// Переменая новой карточки
@@ -85,7 +88,7 @@ function AddcardSubmitHandler(evt) {
 	closePopup(cardAddPopup);
 }
 
-function EditProfileSubmitHandler(evt) {
+function handleEditProfileSubmit(evt) {
 	evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
 	profileName.textContent = nameInput.value; // Получаем значение полей из свойства value
 	profileDescription.textContent = descriptionInput.value; //
@@ -100,11 +103,6 @@ function deleteCard(evt) {
 	evt.target.closest(".element").remove();
 }
 
-buttonEditProfile.addEventListener("click", () => {
-	openPopup(profileEditPopup);
-});
-
-
 cardAddButton.addEventListener("click", () => {
 	openPopup(cardAddPopup);
 });
@@ -116,9 +114,11 @@ buttonClosePopupList.forEach((closeButton) =>
 	})
 );
 
-profileEditForm.addEventListener("submit", EditProfileSubmitHandler);	// Прикрепляем обработчик к форме:
-																								// он будет следить за событием “submit” - «отправка»
-cardAddForm.addEventListener("submit", AddcardSubmitHandler);
+profileEditForm.addEventListener("submit", handleEditProfileSubmit);	// Прикрепляем обработчик к форме:
+                                                                     // он будет следить за событием “submit” - «отправка»
+cardAddForm.addEventListener("submit", handleAddCardSubmit);
+
+buttonEditProfile.addEventListener('click', openPropfilePopup)
 
 profileEditPopup.addEventListener("click", closePopupByOverlay);
 cardAddPopup.addEventListener("click", closePopupByOverlay);
