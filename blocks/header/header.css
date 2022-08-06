@@ -1,26 +1,10 @@
 .header {
-  max-width: 880px;
-  padding-top: 45px;
-  padding-bottom: 41px;
+  width: calc(100% - (200px * 2));
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 880px) {
   .header {
-    width: calc(100% - 100px);
-    padding-top: 28px;
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    width: calc(100% - 54px);
-	 padding-left: 27px;
-	 padding-right: 27px;
+    width: 100%;
   }
 }
